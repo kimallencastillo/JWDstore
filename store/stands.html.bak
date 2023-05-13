@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>JWD Home</title>
+<link rel = "stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/60641e66e0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class = "menubar">
+<ul>
+<li><i class="fa-solid fa-house-chimney"></i><a href = "index.html"> Home<a></li>
+<li><i class="fa-solid fa-person-circle-question"></i><a href = "#"> About Us<a>
+<div class="submenu1">
+	<ul>
+	<li><a href="mission.html">Mission</a></li>
+	<li><a href="vision.html">Vision</a></li>	
+	</ul>
+	</div>
+</li>
+<li><i class="fa-solid fa-house-chimney-medical"></i><a href = "#"> Home Essentials<a>
+	<div class="submenu1">
+	<ul>
+	<li><a href="airpurifiers.html">Air Purifiers</a></li>
+	<li><a href="waterfiltration.html">Water Filtration Systems</a></li>	
+	</ul>
+	</div>
+</li>
+<li ><i class="fa-solid fa-heart-circle-plus"></i><a href = "#"> Living Necessities<a>
+<div class="submenu1">
+	<ul>
+	<li><a href="kitchentools.html">Kitchen Tools & Utilities</a></li>
+	<li><a href="servingset.html">Serving Set</a></li>	
+	</ul>
+	</div>
+</li>
+
+<li class=active><i class="fa-solid fa-music"></i><a href = "#"> Musical Instruments<a>
+<div class="submenu1">
+	<ul>
+	<li><a href="keyboards.html">Portable Piano Keyboards</a></li>
+	<li><a href="stands.html">Keyboard Stands</a></li>	
+	</ul>
+	</div>
+</li>
+</ul>
+<i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search..">
+<img src="jwd-small.png" align=right style="vertical-align:right;margin:0px 50px">
+
+</div>
+<br><br><br><br><br>
+<div class="small-content">
+
+<h1 align = center> Keyboard Stands </h1>
+<br>
+   <div class="small-container">
+     
+         
+         <div class="row">
+               <div class="col-4">
+                   <a href = " gl-220.html"><img src="Products\stands\1.png" height = 250 width = 250></a>
+                   <h4>D - Stand</h4>
+                   
+                   <p>₱525.00</p>
+               </div> 
+               <div class="col-4">
+                   <a href = gl-290.html><img src="Products\stands\2.png" height = 250 width = 250></a>
+                   <h4>Ok - Stand</h4>
+                   
+                   <p>₱570.00</p>
+               </div> 
+               <div class="col-4">
+                   <a href = gl-326.html><img src="Products\stands\3.png" height = 250 width = 250></a>
+                   <h4>Single X - Stand</h4>
+                   
+                   <p>₱610.00</p> 
+               </div> 
+                <div class="col-4">
+                   <a href = gl-330.html><img src="Products\stands\4.png" height = 250 width = 250></a>
+                   <h4>Double X - Stand</h4>
+                   
+                   <p>₱720.00</p>
+               </div> 
+           </div>
+     
+       </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+form {
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+.wrapper {
+    height: 100vh;
+    background: rgba(192, 192, 192, 0.5);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
+}
+
+.header {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background: rgb(192, 192, 192);
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "title options options options options";
+}
+
+.title-container {
+    grid-area: title;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: default;
+}
+
+.title-container i {
+    margin-right: 5px;
+}
+
+.options-container {
+    grid-area: options;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.options-container ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.options-container li {
+    display: inline;
+    border-radius: 5px;
+    padding: 0.3em 0.5em;
+    margin: 0 0.5em;
+}
+
+.options-container li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.options-container li:hover {
+    background-color: gray;
+}
+
+.dropdown-menu {
+    text-align: center;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.logout-btn {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.content {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 0.1em 0.5em 0.5em 0.5em;
+    padding: 0.5em;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    background: rgb(192, 192, 192);
+    grid-template-columns: 20% 80%;
+}
+
+.content .left {
+    grid-column: 1/2;
+    margin: 0 0.5em 0 0;
+    padding: 1em;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left a {
+    width: 80%;
+    height: 4em;
+    margin-bottom: 1em;
+    color: inherit;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+.left a:hover {
+    background: rgb(170, 170, 170);
+}
+
+.left .option div {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+}
+
+.left .option-icon {
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left .option-name {
+    grid-column: 2/3;
+    padding: 0 0 0 1em;
+}
+
+.content .right {
+    grid-column: 2/3;
+    padding: 1em;
+    background-color: white;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.content .right .title {
+    margin: 0 0 2em 0;
+    border-bottom: 1px solid black;
+}
+
+.content .right .actions-container {
+    margin: 0 0 2em 0;
+    width: 100%;
+    display: flex;
+    padding: 0 1em;
+    justify-content: flex-end;
+}
+
+.actions-container button {
+    background-color: silver;
+}
+
+.content .right .actions-container button {
+    width: 7.5em;
+    height: 2.5em;
+    margin: 0 0.5em;
+    border-radius: 5px;
+}
+
+.content .actions-container button:hover {
+    opacity: 0.8;
+}
+
+.content-container {
+    height: 100%;
+    width: 100%;
+    padding: 0 1em;
+    display: flex;
+    justify-content: center;
+}
+
+div.dataTables_wrapper div.dataTables_filter {
+    width: 100%;
+    float: none;
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}

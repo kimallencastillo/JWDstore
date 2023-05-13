@@ -1,0 +1,167 @@
+<html>
+<head>
+<title>JWD Home</title>
+<link rel = "stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/60641e66e0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class = "menubar">
+<ul>
+<li><i class="fa-solid fa-house-chimney"></i><a href = "index.html"> Home<a></li>
+<li><i class="fa-solid fa-person-circle-question"></i><a href = "#"> About Us<a>
+<div class="submenu1">
+	<ul>
+	<li><a href="#">Mission</a></li>
+	<li><a href="#">Vision</a></li>	
+	</ul>
+	</div>
+</li>
+<li><i class="fa-solid fa-house-chimney-medical"></i><a href = "#"> Home Essentials<a>
+	<div class="submenu1">
+	<ul>
+	<li><a href="#">Air Purifiers</a></li>
+	<li><a href="#">Water Filtration Systems</a></li>	
+	</ul>
+	</div>
+</li>
+<li><i class="fa-solid fa-heart-circle-plus"></i><a href = "#"> Living Necessities<a>
+<div class="submenu1">
+	<ul>
+	<li><a href="#">Kitchen Tools & Utilities</a></li>
+	<li><a href="#">Serving Set</a></li>	
+	</ul>
+	</div>
+</li>
+
+<li><i class="fa-solid fa-music"></i><a href = "#"> Musical Instruments<a>
+<div class="submenu1">
+	<ul>
+	<li><a href="#">Portable Piano Keyboards</a></li>
+	<li><a href="#">Keyboard Stands</a></li>	
+	</ul>
+	</div>
+</li>
+</ul>
+<i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search..">
+<img src="jwd-small.png" align=right style="vertical-align:right;margin:0px 50px">
+
+</div>
+<br><br><br><br><br>
+
+       
+       
+<!--------------single-product--------------->
+<div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src="Products\Piano\GL - 290\1.png" height = 450>
+            
+            
+        </div>
+        <div class="col-2">
+            <p>Home / T-Shirt</p>
+            <h1>GL - 290 Piano</h1>
+            <h4>₱2,131.00</h4>
+            
+            
+            
+            <input type="number" value="1">
+            <a href="cart.html" class="btn">Add To Cart</a>
+            
+            </div>
+    </div>
+</div>
+<!----------------- title -------------->
+<div class="small-container">
+   <div class="row row-2">
+       <h2>Related Products</h2>
+   </div>
+    
+</div>
+    
+<!-------------- Our Products -------------->
+<div class="small-container">
+         
+             <div class="row">
+               <div class="col-4">
+                   <a href = gl-220.html><img src="Products\Piano\GL - 220\2.png" height=220>
+                   <h4>GL - 220 Piano</h4></a>
+                   
+                   <p>₱2,137.00</p> 
+               </div> 
+               <div class="col-4">
+                   <a href = gl-397.html><img src="Products\Piano\GL - 397\2.png" height=220>
+                   <h4>GL - 397 Piano</h4></a>
+                 
+                   <p>₱3,610</p>
+               </div> 
+               <div class="col-4">
+                   <a href = gl-999.html><img src="Products\Piano\GL - 999\2.png" height=220>
+                   <h4>GL - 999 Piano</h4></a>
+                   
+                   <p>₱2,920</p>
+               </div> 
+                
+           </div>
+           
+       </div>
+  
+     
+   
+
+<script>
+    
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle()
+    {
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }else
+            {
+                MenuItems.style.maxHeight = "0px"
+            } 
+    }
+    
+//-------------Produc Gallery------------
+    
+    var ProductImg = document.getElementById("ProductImg");
+    
+    var SmallImg = document.getElementsByClassName("small-img");
+       
+ 
+        SmallImg[0].onclick = function()
+        {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function()
+        {
+            ProductImg.src = SmallImg[1].src;
+        
+        }
+        SmallImg[2].onclick = function()
+        {
+            ProductImg.src = SmallImg[2].src;
+        
+        }
+        SmallImg[3].onclick = function()
+        {
+            ProductImg.src = SmallImg[3].src;
+        
+        }
+
+  //-------------End Produc Gallery------------  
+    
+    
+    
+    
+</script>
+
+
+
+</body>
+</html>
+
